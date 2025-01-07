@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "payment-roll:build:production"
+              "buildTarget": "payment-roll:build:production"
             },
             "development": {
-              "browserTarget": "payment-roll:build:development"
+              "buildTarget": "payment-roll:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "payment-roll:build"
+            "buildTarget": "payment-roll:build"
           }
         },
         "test": {
