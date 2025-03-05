@@ -1,8 +1,8 @@
 {
-  "name": "payment-roll",
+  "name": "gestor-app",
   "version": "1.0.0",
   "main": "index.js",
-  "packageManager": "npm@9.8.1",
+  "packageManager": "npm@8.5.0",
   "workspaces": [
     "apps/*"
   ],
@@ -11,5 +11,8 @@
   },
   "author": "Giulio Sá",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "turbo": "^2.4.4"
+  }
 }
