@@ -1,52 +1,27 @@
-Gestor App 🚀
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+
+# Gestor App 🚀
 
 Gestor App é uma aplicação modular para gestão empresarial, utilizando monorepo com Turborepo. O objetivo é permitir a expansão para diversos módulos no futuro, começando pelo gerenciamento de funcionários.
 
-📌 Tecnologias Utilizadas
+## Documentação
 
-    Turborepo → Gerenciamento eficiente do monorepo
+[Notion](https://www.notion.so/giulio-sa/Gestor-App-1c5afa9effc5809b908fe5c69a9ae132?pvs=4)
 
-    Angular → Frontend modular e escalável
+### 📂 Estrutura do Projeto
 
-    NestJS → Backend estruturado e robusto
+gestor-app:
 
-    Go → Cálculos e processamento assíncrono
+- apps/
+  - frontend/ Aplicação Angular
+  - backend/ Backend NestJS (BFF)
+- packages/
+  - shared/ # Módulos compartilhados entre frontend e backend
+- package.json
+- turbo.json # Configuração do Turborepo
+- README.md
 
-    Kafka → Comunicação eficiente entre serviços
-
-    Docker → Facilitação do ambiente de desenvolvimento
-
-📂 Estrutura do Projeto
-
-gestor-app/
-│── apps/
-│ ├── frontend/ # Aplicação Angular
-│ ├── backend/ # Backend NestJS (BFF)
-│── packages/
-│ ├── shared/ # Módulos compartilhados entre frontend e backend
-│── package.json
-│── turbo.json # Configuração do Turborepo
-└── README.md
-
-⚙️ Como Rodar o Projeto
-1️⃣ Instalar Dependências
-
-npm install
-
-2️⃣ Rodar em Desenvolvimento
-
-npm run start
-
-Este comando executa todos os pacotes em modo de desenvolvimento utilizando o Turbo.
-3️⃣ Build do Projeto
-
-npm run build
-
-4️⃣ Verificar Erros de Código
-
-npm run lint
-
-🔧 Como Funciona o Monorepo com Turbo?
+### 🔧 Como Funciona o Monorepo com Turbo?
 
     apps/ → Contém os aplicativos principais (Frontend e Backend).
 
@@ -56,10 +31,46 @@ npm run lint
 
     infra/ → Contém o banco de dados e configurações de Docker
 
-📜 Licença
+## 📌 Tecnologias Utilizadas
 
-Este projeto está sob a licença ISC.
+**Client:** Angular, Turborepo, TailwindCSS
 
-✉️ Autor
+**Server:** Node, NestJs, Go, Kafka
 
-Desenvolvido por Giulio Sá.
+**Infra:** Docker
+
+## ⚙️ Como Rodar o Projeto
+
+1️⃣ Instalar Dependências
+
+```bash
+  npm install
+```
+
+2️⃣ Rodar em Desenvolvimento
+
+```bash
+npm run start
+```
+
+Este comando executa todos os pacotes em modo de desenvolvimento utilizando o Turbo.
+
+3️⃣ Build do Projeto
+
+```bash
+npm run build
+```
+
+4️⃣ Verificar Erros de Código
+
+```bash
+npm run lint
+```
+
+## 📜 Licença
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## ✉️ Authors
+
+- [@giuliosa](https://github.com/giuliosa)
